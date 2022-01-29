@@ -1,0 +1,16 @@
+.footer {
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+.footer__icons {
+    margin-bottom: 20px;
+}
+
+.footer__icons__link {
+    margin: 0 15px;
+    text-decoration: none;
+}

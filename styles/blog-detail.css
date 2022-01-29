@@ -1,0 +1,18 @@
+.blog-detail {
+}
+
+.blog-detail__title {
+    padding: 0;
+}
+
+.blog-detail__info {
+    margin-bottom: 40px;
+}
+
+.blog-detail > p,
+.blog-detail > img {
+    padding-bottom: 20px;
+}
+
+.blog-detail__title {
+}

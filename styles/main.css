@@ -1,0 +1,144 @@
+/* the order of imports is important */
+@import "./normalize.css";
+
+@import "./fonts.css";
+@import "./typography.css";
+
+@import "./nav.css";
+@import "./footer.css";
+@import "./blog.css";
+@import "./blog-detail.css";
+@import "./order.css";
+@import "./form.css";
+@import "./products.css";
+@import "./frontpage.css";
+@import "./products-detail.css";
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    margin: 0;
+    max-width: 100%;
+}
+
+html {
+    /**
+     * For other elements please use only rem for text!
+     * The rem unit is relative to the font size of the <html> element
+     */
+    font-size: 16px;
+    scroll-behavior: smooth;
+
+    font-family: "-apple-system", "system-ui", sans-serif;
+}
+
+body {
+    color: black;
+    /* 1rem == 16px */
+    font-size: 1rem;
+    font-family: "Rubik", sans-serif;
+    font-weight: 300; /* light */
+    background-color: white;
+    font-variant-numeric: lining-nums;
+    font-feature-settings: "lnum" 1;
+    text-rendering: optimizeLegibility;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+
+    /* Because of fixed navigation */
+    padding-top: 100px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+.fixed-page {
+    overflow: hidden;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 860px;
+}
+
+.container--small {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 680px;
+}
+
+.btn {
+    outline: 0;
+    border: none;
+    font-size: 12px;
+    min-height: 45px;
+    cursor: pointer;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px 10px;
+    background: white;
+    margin-inline-start: 0;
+    text-transform: uppercase;
+    transition: all ease-in 0.2s;
+    border: 1px solid black;
+    max-width: -webkit-fill-available;
+}
+
+.btn:hover {
+    color: white;
+    background: black;
+    opacity: 0.9;
+}
+
+.active {
+    color: #d7b356 !important;
+}
+
+a {
+    color: black;
+}
+a:hover {
+    text-decoration: none;
+}
+
+/* xs */
+@media (min-width: 425px) {
+}
+/* sm */
+@media (min-width: 576px) {
+}
+/* md */
+@media (min-width: 768px) {
+    .btn {
+        min-width: 250px;
+    }
+}
+/* lg */
+@media (min-width: 992px) {
+}
+/* xl */
+@media (min-width: 1170px) {
+    .btn {
+        max-width: -webkit-fill-available;
+    }
+}
